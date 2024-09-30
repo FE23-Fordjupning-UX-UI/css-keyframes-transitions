@@ -1,0 +1,43 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    position: relative;
+}
+
+.ball {
+    width: 20px;
+    height: 20px;
+    background-color: pink;
+    border-radius: 999rem;
+    position: absolute;
+    top: 100px;
+    left: 50%;
+    animation: bounce 1s linear infinite;
+}
+
+.surface {
+    width: 50px;
+    border: 1px solid #000000;
+    top: 200px;
+    left: 49%;
+    position: absolute;
+}
+
+@keyframes bounce {
+    0% {
+        top: 100px
+    }
+
+    50% {
+        top: 190px;
+        width: 22px;
+        height: 15px;
+    }
+
+    100% {
+        top: 100px;
+    }
+}
